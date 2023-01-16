@@ -1,0 +1,29 @@
+student@workstation DO180-apps]$ podman logs mysql-db
+=> sourcing 20-validate-variables.sh ...
+You must either specify the following environment variables:
+  MYSQL_USER (regex: '^[a-zA-Z0-9_]+$')
+  MYSQL_PASSWORD (regex: '^[a-zA-Z0-9_~!@#$%^&*()-=<>,.?;:|]+$')
+  MYSQL_DATABASE (regex: '^[a-zA-Z0-9_]+$')
+Or the following environment variable:
+  MYSQL_ROOT_PASSWORD (regex: '^[a-zA-Z0-9_~!@#$%^&*()-=<>,.?;:|]+$')
+Or both.
+Optional Settings:
+  MYSQL_LOWER_CASE_TABLE_NAMES (default: 0)
+  MYSQL_LOG_QUERIES_ENABLED (default: 0)
+  MYSQL_MAX_CONNECTIONS (default: 151)
+  MYSQL_FT_MIN_WORD_LEN (default: 4)
+  MYSQL_FT_MAX_WORD_LEN (default: 20)
+  MYSQL_AIO (default: 1)
+  MYSQL_KEY_BUFFER_SIZE (default: 32M or 10% of available memory)
+  MYSQL_MAX_ALLOWED_PACKET (default: 200M)
+  MYSQL_TABLE_OPEN_CACHE (default: 400)
+  MYSQL_SORT_BUFFER_SIZE (default: 256K)
+  MYSQL_READ_BUFFER_SIZE (default: 8M or 5% of available memory)
+  MYSQL_INNODB_BUFFER_POOL_SIZE (default: 32M or 50% of available memory)
+  MYSQL_INNODB_LOG_FILE_SIZE (default: 8M or 15% of available memory)
+  MYSQL_INNODB_LOG_BUFFER_SIZE (default: 8M or 15% of available memory)
+
+For more information, see https://github.com/sclorg/mysql-container
+[student@workstation DO180-apps]$ 
+
+
